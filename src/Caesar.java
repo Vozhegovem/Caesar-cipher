@@ -25,7 +25,7 @@ public class Caesar {
                         if (j <= 32) {
                             decodedText.append(chars[(j + key) % 33]);
                             break;
-                        } else if (j >= 64) {
+                        } else if (j > 64) {
                             decodedText.append(chars[j]);
                             break;
                         } else {
